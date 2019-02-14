@@ -3,7 +3,7 @@ from . import views
 
 app_name = 'polls'
 urlpatterns = [
-    # ex: /polls/
+    # ex: http://127.0.0.1:8000
     path('', views.home, name='home'),
     # ex: /polls/
     path('index/', views.index, name='index'),
