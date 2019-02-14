@@ -1,0 +1,67 @@
+body {
+	background-color: #FFFFFF;
+	font-size: 14px; 
+	color: #424242; 
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 20px;	
+}
+
+td {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+pre {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+
+thead {
+	background-color: #FFBBBB;
+}
+
+tfoot {
+	background-color: #BBBBFF;
+}
+
+th {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* Basic formats */
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+/* Global align classes */
+
+
+/* Image and table specific aligns */
+
+img.left, table.left {
+	float: left;
+	text-align: inherit;
+}
+
+img.center, table.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: inherit;
+}
+
+img.center {
+	display: block;
+}
+
+img.right, table.right {
+	float: right;
+	text-align: inherit;
+}

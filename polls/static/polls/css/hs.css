@@ -1,0 +1,244 @@
+/* Highslide */
+.highslide {
+	cursor: url(http://www.cobracap.com/images/_gallery/zoomin.cur), pointer;
+    outline: none;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide img {
+	border:;
+}
+.highslide:hover img {
+	border:;
+}
+.highslide-wrapper {
+	background: white;
+}
+.highslide-wrapper .highslide-html-content {
+    width: 522px;
+    padding: 5px;
+	font-weight: bold;
+	color: gray;
+}
+.highslide-wrapper .highslide-header div {
+}
+.highslide-wrapper .highslide-header ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.highslide-wrapper .highslide-header ul li {
+	display: inline;
+	padding-left: 1em;
+}
+.highslide-wrapper .highslide-header ul li.highslide-previous, 
+.highslide-wrapper .highslide-header ul li.highslide-next {
+	display: none;
+}
+.highslide-wrapper .highslide-header a {
+	font-weight: bold;
+	color: gray;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.highslide-wrapper .highslide-header a:hover {
+	color:#CC0000;
+}
+.highslide-wrapper .highslide-header .highslide-move a {
+	display:none;
+}
+.highslide-wrapper .highslide-footer {
+	height: 11px;
+}
+.highslide-wrapper .highslide-footer .highslide-resize {
+	float: right;
+	height: 11px;
+	width: 11px;
+	background: url(http://www.cobracap.com/images/_gallery/resize.gif);
+}
+.highslide-wrapper .highslide-body {
+}
+.highslide-move {
+    cursor: move;
+}
+.highslide-resize {
+    cursor: nw-resize;
+}
+.highslide-footer {
+	display: none;
+}
+.highslide-image {
+	border: 10px solid white;
+}
+.highslide-image-blur {
+}
+.highslide-caption {
+    display: none;
+    border: 5px solid white;
+    border-top: none;
+    padding: 5px;
+    background-color: white;
+}
+.highslide-loading {
+    display: block;
+	color: black;
+	font-size: 8pt;
+	font-family: sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+	padding: 2px;
+	border: 1px solid black;
+    background-color: white;
+    
+    padding-left: 22px;
+    background-image: url(http://www.cobracap.com/images/_gallery/loader.white.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+}
+a.highslide-credits,
+a.highslide-credits i {
+    padding: 2px;
+    color: silver;
+    text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+    color: white;
+    background-color: gray;
+}
+a.highslide-full-expand {
+	background: url(http://www.cobracap.com/images/_gallery/fullexpand.gif) no-repeat;
+	display: block;
+	margin: 0 10px 10px 0;
+	width: 34px;
+	height: 34px;
+}
+.highslide-dimming {
+	position: absolute;
+	background: #AAA;
+}
+.control {
+	float: right;
+    display: block;
+    /*position: relative;*/
+	margin: 0 5px;
+	font-size: 9pt;
+    font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.control:hover {
+	color: black !important;
+}
+.highslide-overlay {
+	display: none;
+}
+.highslide-maincontent {
+	display: none;
+}
+.highslide-html {
+	background-color: white;
+}
+.highslide-html-content {
+	display: none;
+}
+.highslide-header {
+	padding-bottom: 5px;
+}
+.highslide-header ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.highslide-header ul li {
+	display: inline;
+	padding-left: 1em;
+}
+.highslide-header ul li.highslide-previous, .highslide-header ul li.highslide-next {
+	display: none;
+}
+.highslide-header a {
+	font-weight: bold;
+	color: gray;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.highslide-header a:hover {
+	color: black;
+}
+.highslide-header .highslide-move a {
+	cursor: move;
+}
+.highslide-footer {
+	height: 11px;
+}
+.highslide-footer .highslide-resize {
+	float: right;
+	height: 11px;
+	width: 11px;
+	background: url(http://www.cobracap.com/images/_gallery/resize.gif);
+}
+.highslide-body {
+text-align:left;
+padding:10px 10px 20px 10px;
+}
+.highslide-body p, .highslide-body li {
+font-weight:normal;
+}
+.highslide-body h1 {
+	font-size:20px;
+	color:#127CC0;
+}
+.highslide-body .dtime {
+font-weight:bold;
+}
+.highslide-body .action {
+margin:30px 0 0 0;
+}
+.highslide-body .action input {
+min-width:100px;
+margin:0 0 0 10px;
+}
+.highslide-resize {
+	cursor: nw-resize;
+}
+/* Controlbar */
+.mPhotoControlbar {	
+	background: url(http://www.cobracap.com/images/_gallery/controlbar.gif);
+	width: 167px;
+	height: 34px;
+}
+.mPhotoControlbar a {	
+	display: block;
+	float: left;
+	/*margin: 0px 0 0 4px;*/	
+	height: 27px;
+}
+.mPhotoControlbar a:hover {
+	background-image: url(http://www.cobracap.com/images/_gallery/controlbar-hover.gif);
+}
+.mPhotoControlbar .previous {
+	width: 50px;
+}
+.mPhotoControlbar .next {
+	width: 40px;
+	background-position: -50px 0;
+}
+.mPhotoControlbar .highslide-move {
+	width: 40px;
+	background-position: -90px 0;
+}
+.mPhotoControlbar .close {
+	width: 36px;
+	background-position: -130px 0;
+}
+
+/* These must always be last */
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}

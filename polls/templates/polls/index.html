@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Survey|Golden Arch LLC. ">
+    <meta name="keywords" content="Survey,Golden Arch">
+    <link rel="shortcut icon" href="{% static "polls/i/favicon.ico" %}" />
+    <link rel="icon" href="{% static "polls/i/favicon.ico" %}" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <title>Skin Care Survey|Golden Arch LLC.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/polls/css/bootstrap.min.css" rel="stylesheet" />
+
+  	<!-- fancyBox -->
+	<link rel="stylesheet" href="/static/polls/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <link href="{% static 'polls/css/main.css' %}" rel="stylesheet" />
+    <link href="/static/polls/css/main.css" rel="stylesheet" /> 
+
+    <script src="/static/polls/js/jquery/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="visible-sm-block visible-md-block visible-lg-block">
+        <img u="image" src="{% static "polls/i/header.jpg" %}" class="img-responsive"/>
+    </div>
+ 
+    <div class="visible-xs-block">
+        <div><img u="image" src="/static/polls/i/header.jpg" class="img-responsive"/></div>
+    </div>
+</div>
+
+<div class="container" >
+    <div class="main-content">
+    <div class="row featurette">
+        <div class="hidden-xs hidden-sm col-md-2">
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-8">
+            <h2>Product Survey</h2><br/>
+            <h3> please take our survey to help us improve our products and services so that we can better serve you</h3><br/><br/>
+            {% if latest_question_list %}
+                <h4><ul>
+                {% for question in latest_question_list %}
+                <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li><br/><br/>
+                {% endfor %}
+                </ul></h4>
+            {% else %}
+                <p>No polls are available.</p>
+            {% endif %}
+        </div>
+    </div>
+        <hr />  <!-- featurette-divider -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="copyRight">&copy; Copyright 2019 CN CONNECTION GOLDEN ARCH LLC. All Rights Reserved.</div>
+        </footer>
+        <br /><br />
+    </div>
+
+</div>
+<!-- end of .container -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static "polls/js/plugin/bootstrap-3.3.6.min.js" %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="{% static "polls/js/plugin/ie10-viewport-bug-workaround.js" %}"></script>
+
+<!-- fancybox -->
+<script type="text/javascript" src="{% static "polls/js/plugin/jquery.fancybox.pack.js" %}"></script>
+
+</body>
+</html>

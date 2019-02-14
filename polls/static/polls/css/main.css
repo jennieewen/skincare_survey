@@ -1,0 +1,328 @@
+@CHARSET "UTF-8";
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, button, input, select, textarea {
+	color: #222;
+}
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+
+::selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #f26213;
+	margin: 1em 0;
+	padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/493
+ */
+
+audio, canvas, img, video {
+	vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+.clear {clear: both;}
+
+
+/* -- start Master page -- */
+
+body {
+	font-family: Arial, Helvetica, tahoma, verdana, ����, SimSun, ����ϸ��, STXihei, sans-serif; 
+	font-size:14px;
+	line-height:18px;
+	color:#000000;
+	background: #4d86e0 url("../i/bg_blue.png") repeat left top;
+	padding-top:10px;
+}
+
+h1 {color: #5c1309; font-size:36px; font-weight:900;	line-height:45px;	margin-bottom: 10px; text-align:center;}
+h2 {color: #5c1309; font-size:28px; font-weight:600;	line-height:35px; text-align:center;	} 
+h3 {color: #000; font-size:18px; font-weight:300;	line-height:24px;	}
+h4 {color: #000; font-size:22px; font-weight:600;	line-height:28px;	}
+h5 {color: #000; font-size:14px; font-weight:300;	line-height:20px;	}
+h6 {color: #000; font-size:12px; font-weight:300;	line-height:18px;	text-align:center;}
+
+/* General link styling 
+a:link {
+	font-weight:bold;
+	text-decoration:none;
+	color:#192640;
+}
+a:hover {
+	text-decoration:underline;
+	color:#1c47a0;
+}
+a:visited {
+	font-weight:bold;
+	text-decoration:none;
+	color:#192640;
+}
+*/
+
+/* start Home page slider */
+.slideContainer {
+	visibility: hidden; 
+	position: relative; 
+	margin: 0 auto; 
+	width: 1300px; 
+	height: 666px; 
+	overflow: hidden;
+}
+.slides {
+	cursor: move; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 1300px; 
+	height: 666px;
+  overflow: hidden;
+}
+
+.slide-caption-container { position:absolute; top:500px; left:850px; width:220px; height:220px; text-align:center; color:#000000; font-weight:600;}
+.slide-caption-cn { font-size:40px; font-family: Arial, Helvetica, tahoma, verdana, KaiTi, 楷体, 宋体, SimSun, 华文细黑, STXihei, sans-serif; line-height:42px; }
+.slide-caption-vn { font-size:20px; line-height:50px; }
+.slide-caption-en { font-size:22px; line-height:50px; }
+
+/* end of Home page slider */
+
+/* start general content page slider */
+.slideContainerG {
+	visibility: hidden; 
+	position: relative; 
+	margin: 0 auto; 
+	width: 1170px; 
+	height: 200px; 
+	overflow: hidden;
+}
+.slidesG {
+	cursor: move; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 1170px; 
+	height: 200px;
+  overflow: hidden;
+}
+/* end of general content page slider */
+
+/* -- start Master page -- */
+
+      
+/* --#region left menu navigation begin -- */
+.leftNav {display:inline; float:left; width:100%; }
+.leftNav ul {	margin-left: 0;	padding-left: 0; list-style-type: none; }
+.leftNav a {
+	display: block;
+	width:100%;
+	height:36px;
+	/*background-color: #f7a256;*/
+	background-image: url(../i/navbar1.png);
+	border-bottom: 4px solid #eee;
+	padding-top:8px;
+	padding-left:16px;
+	color:#000000;
+	font-size:20px;
+	font-weight:600;
+}
+.leftNav a:link, #navlist a:visited {
+	text-decoration: none;
+}
+.leftNav a:hover {
+	background-color: #fff;
+	color: #f2270c;
+}
+.langswitcher {float:right;	padding:6px 50px 4px 0; font-weight:600; color:#c10a0a;	}
+.langswitcher a {color:#c10a0a; text-decoration:none;	}
+.langswitcher a:hover{color:#fff;	}
+
+
+/* start overwrite BootStrap style  */
+.navbar-default {margin-bottom: 0px; background-image:url(../i/navbar1.png);}
+#navbar ul {padding-left:0px;}
+#navbar ul li a {color:#000;font-size:20px;font-weight:800;}
+#navbar ul li a:hover {color:#fff;}
+.dropdown-menu { background-color: #ef933c; } 
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #ef933c;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #ef933c; 
+    background-image:url(../i/navbar1.png);
+}
+.navbar-collapse[aria-expanded="true"] {background-color:#ef933c;}
+
+.breadcrumb {
+    background-color:transparent;
+    list-style: outside none none;
+    margin-bottom: 5px;
+    padding: 0 15px 0 15px;
+}
+.breadcrumb > li + li::before {
+    color: #03041b;
+    content: " > ";
+    padding: 0 5px;
+}
+.breadcrumb > .active {
+    color: #111888;
+    font-weight:600;
+}
+.well {
+    background-color: #f5f5f5;
+    border: 6px solid #e3e3e3;
+    /*border-radius: 4px;*/
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+}
+.well-sm {
+    border-radius: 20px;
+    padding: 20px 14px 20px 14px;
+}
+
+
+/* end of overwrite BootStrap style  */
+
+footer {text-align:center; color:#9d0f04; font-weight:600;}
+footer .copyRight {font-size:12px; font-weight:400; color:#000000;}
+
+/* -- end of Master page -- */
+
+
+/* -- start Content page -- */
+/*.main-content { padding:10px 15px 15px 15px; background: url(../i/bg-yellow2.png) repeat center center; } */
+.main-content { padding:10px 15px 15px 15px; background-color: #fff; }
+.supertitle-cn 
+{
+	font-family: Arial, Helvetica, tahoma, verdana, KaiTi, ����, ����, SimSun, ����ϸ��, STXihei, sans-serif;
+	color: #5c1309; font-size:34px; font-weight:900;	line-height:45px;	margin-bottom: 10px;
+}
+.title-cn 
+{
+	font-family: Arial, Helvetica, tahoma, verdana, KaiTi, ����, ����, SimSun, ����ϸ��, STXihei, sans-serif;
+  color: #5c1309; font-size:28px; font-weight:800;	line-height:35px;	
+}
+.subtitle-cn 
+{
+  color: #000; font-size:18px; font-weight:600;	line-height:22px;	
+}
+
+.subtitle-vn 
+{
+  color: #000; font-size:16px; font-weight:400;	line-height:26px;	
+}
+
+.txt-cn 
+{
+	color: #000; font-size:16px; font-weight:300;	line-height:24px;	
+}
+
+.float-img {float: left; margin:0 20px 20px 0 }
+.float-txt {text-align: justify;  }
+h4:before, p:before {content:""; min-width:10em; display:block;overflow:hidden;clear:right;}
+
+/* -- end of Content page -- */
+
+/* -- start Dafault page -- */
+.event-style div{margin-bottom:30px; margin-top:30px; min-height:200px; padding:10px 20px 20px 10px;}    
+.event-style a {color:#000;}
+.event-style a:link {color:#000; text-decoration:none;}
+.event-style a:hover {color:#000; text-decoration:none;}
+.event-style .event-title{    
+  margin-top:0;text-align:center; color: #1b3fa9; font-size:18px; font-weight:400;	line-height:24px;	
+}
+
+.photo-notes {color:blue; font-weight:600; font-size:14px; text-align:center;}
+
+.photoindex {margin-bottom:20px; min-height:240px;}
+
+
+ul#weeklynews { list-style-image: url('../i/icon_find.png'); }
+ul#weeklynews li a { font-size:16px; font-weight:600; line-height:24px;	color:#192640; text-decoration:none; }
+ul#weeklynews li a:hover {color:#c73210; text-decoration:underline;}
+ul#weeklynews li a:visited {color:#192640; text-decoration:none;	}
+
+
+
+/* -- Article page --*/
+.articlecontent p{
+	  font-family: Arial, Helvetica, tahoma, verdana, KaiTi, ����, ����, SimSun, ����ϸ��, STXihei, sans-serif;
+	  font-size: 20px;
+	  font-weight: 600;
+	  text-decoration: none;
+	  line-height:28px;
+	  color: #333333;
+
+}
+
+/* -- Contact Us **/
+.txtred {	font-size:16px; color:#d91b07; }
+.btn-default {font-weight:800;}
+
+/* -- start master page -- */
+h4 ul { list-style-type:none; padding-left:8px; }
+h4 ul li {margin-top: 4px;}
+

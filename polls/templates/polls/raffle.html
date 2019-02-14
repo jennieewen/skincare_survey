@@ -1,0 +1,11 @@
+
+<h3> Please enter your email for a chance to win a $100 gift card</h3>
+
+
+<form action="{% url 'polls:raffle' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <p><input type="checkbox"> Subscribe to our monthly newsletter<br></p>
+
+<input type="submit" value="Enter raffle">
+</form>

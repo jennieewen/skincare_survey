@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Survey|Golden Arch LLC. ">
+    <meta name="keywords" content="Survey,Golden Arch">
+    <link rel="shortcut icon" href="{% static "polls/i/favicon.ico" %}" />
+    <link rel="icon" href="{% static "polls/i/favicon.ico" %}" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <title>Skin Care Survey|Golden Arch LLC.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/polls/css/bootstrap.min.css" rel="stylesheet" />
+
+  	<!-- fancyBox -->
+	<link rel="stylesheet" href="/static/polls/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <link href="/static/polls/css/main.css" rel="stylesheet" />
+
+    <script src="/static/polls/js/jquery/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <!-- Jssor Slider Begin -->
+    <div id="slider1_container" class="slideContainer visible-sm-block visible-md-block visible-lg-block">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div class="loading1"></div>
+            <div class="loading2"></div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" class="slides">
+                <div><img u="image" src="{% static "polls/i/slide-1.jpg" %}" /></div>
+                <div><img u="image" src="{% static "polls/i/slide-2.jpg" %}" /></div>
+                <div><img u="image" src="{% static "polls/i/slide-3.jpg" %}" /></div>
+                <div><img u="image" src="{% static "polls/i/slide-4.jpg" %}" /></div>
+                <div><img u="image" src="{% static "polls/i/slide-5.jpg" %}" /></div>
+                <div><img u="image" src="{% static "polls/i/slide-6.jpg" %}" /></div>    
+        </div>              
+
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb05">
+            <div u="prototype"></div> 
+        </div>
+           
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora11l"></span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora11r"></span>
+            
+    </div>
+    <!-- Jssor Slider End -->
+
+    <!-- Static small image for mobile -->
+    <div class="visible-xs-block">
+        <div><img u="image" src="/static/polls/i/slide-1s.jpg" class="img-responsive"/></div>
+    </div>
+
+</div>
+
+<div class="container" >
+    <div class="main-content">
+        <div class="row featurette">
+        <div class="hidden-xs hidden-sm col-md-2">
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-8">
+            <h2>Product Survey</h2><br/>
+            <h3>please take our survey to help us improve our products and services so that we can better serve you</h3>
+                
+            <h1><a href="{% url 'polls:index' %}"><img src="{% static "polls/i/btn_start.png" %}"/></a></h1>
+        </div>
+        </div>
+        <br/><br/><br/><br/>
+        <hr />  <!-- featurette-divider -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="copyRight">&copy; Copyright 2019 CN CONNECTION GOLDEN ARCH LLC. All Rights Reserved.</div>
+        </footer>
+    </div>
+
+</div>
+<!-- end of .container -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static "polls/js/plugin/bootstrap-3.3.6.min.js" %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="{% static "polls/js/plugin/ie10-viewport-bug-workaround.js" %}"></script>
+
+<!-- jssor slider scripts-->
+<script type="text/javascript" src="{% static "polls/js/plugin/jssor.slider.mini.js" %}"></script>
+
+<!-- initialize slider -->
+<script type="text/javascript" src="{% static "polls/js/slider.js" %}"></script>
+
+<!-- fancybox -->
+<script type="text/javascript" src="{% static "polls/js/plugin/jquery.fancybox.pack.js" %}"></script>
+
+</body>
+</html>
