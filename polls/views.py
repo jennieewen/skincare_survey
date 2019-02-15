@@ -102,7 +102,7 @@ def thankyou(request):
     return render(request, 'polls/thankyou.html')
 
 
-'''
+
 class questionList(APIView):
     def get(self, request):
         questions1 = Question.objects.all()
@@ -111,4 +111,3 @@ class questionList(APIView):
 
     def post(self):
         pass
-'''
