@@ -5,6 +5,7 @@ from django.urls import reverse
 from .models import Question
 # from .forms import NameForm
 from .forms import UserForm
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -101,6 +102,7 @@ def thankyou(request):
     return render(request, 'polls/thankyou.html')
 
 
+'''
 class questionList(APIView):
     def get(self, request):
         questions1 = Question.objects.all()
@@ -109,3 +111,4 @@ class questionList(APIView):
 
     def post(self):
         pass
+'''
