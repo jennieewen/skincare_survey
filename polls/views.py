@@ -5,6 +5,13 @@ from django.urls import reverse
 from .models import Question
 # from .forms import NameForm
 from .forms import UserForm
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from . serializers import questionSerializer
+
+
+
 
 def home(request):
     return render(request, 'polls/home.html')
@@ -92,3 +99,13 @@ def user_email(request):
 def thankyou(request):
     # question_list = Question.objects.all(),
     return render(request, 'polls/thankyou.html')
+
+
+class questionList(APIView):
+    def get(self, request):
+        questions1 = Question.objects.all()
+        serializer=questionSerializer(questions1, many=True)
+        return Response(serializer.data)
+
+    def post(self):
+        pass
